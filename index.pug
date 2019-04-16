@@ -2,15 +2,15 @@ doctype html
 html.no-js(lang='en')
 	head
 		meta(charset='utf-8')
-		meta(http-equiv='X-UA-Compatible', content='IE=edge')
-		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		meta(name='viewport' content='width=device-width, initial-scale=1')
 		title My Portfolio
-		link(rel='shortcut icon', href='favicon.ico', type='image/x-icon')
-		link(rel='icon', href='favicon.ico', type='image/x-icon')
-		link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900', rel='stylesheet')
-		link(rel='stylesheet', href='libs/font-awesome/css/font-awesome.min.css')
-		link(href='css/bootstrap.min.css', rel='stylesheet')
-		link(href='css/styles.css', rel='stylesheet')
+		link(rel='shortcut icon' href='favicon.ico' type='image/x-icon')
+		link(rel='icon' href='favicon.ico' type='image/x-icon')
+		link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet')
+		link(rel='stylesheet' href='libs/font-awesome/css/font-awesome.min.css')
+		link(href='css/bootstrap.min.css' rel='stylesheet')
+		link(href='css/styles.css' rel='stylesheet')
 	body
 		#mobile-menu-open.shadow-large
 			i.fa.fa-bars(aria-hidden='true')
@@ -44,151 +44,155 @@ html.no-js(lang='en')
 				span
 					i.fa.fa-chevron-down(aria-hidden='true')
 			// End #lead-down
-			// End #lead
-			#about
-				.container
-					.row
-						.col-md-4
-							h2.heading About Me
-						.col-md-8
-							p
-								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-								| eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-								| ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
-			// End #about
-			#experience.background-alt
-				h2.heading Experience
-				#experience-timeline
-					div(data-date='September 2015 – September 2016')
-						h3 Employer Name
-						h4 Job Title
+		// End #lead
+		#about
+			.container
+				.row
+					.col-md-4
+						h2.heading About Me
+					.col-md-8
 						p
-							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-					div(data-date='September 2015 – September 2016')
-						h3 Employer Name
-						h4 Job Title
-						p
-							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-					div(data-date='September 2015 – September 2016')
-						h3 Employer Name
-						h4 Job Title
-						p
-							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-			// End #experience
-			#education
-				h2.heading Education
-				.education-block
-					h3 University of Ottawa
-					span.education-date Sept 2016 - Sept 2017
-					h4 Bachelor of Science in Computer Science
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
+							| eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
+							| ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
+		// End #about
+		#experience.background-alt
+			h2.heading Experience
+			#experience-timeline
+				div(data-date='September 2015 – September 2016')
+					h3 Employer Name
+					h4 Job Title
 					p
 						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-				// End .education-block
-				.education-block
-					h3 University of Ottawa
-					span.education-date Sept 2016 - Sept 2017
-					h4 Bachelor of Science in Computer Science
-					ul
-						li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						li Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				// End .education-block
-				// End #education
-				#projects.background-alt
-					h2.heading Projects
-					.container
-						.row
-							.project.shadow-large
-								.project-image
-									img(src='images/project.jpg')
-								// End .project-image
-								.project-info
-									h3 Project Name Here
-									p
-										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-									a(href='#') View Project
-								// End .project-info
-								// End .project
-								.project.shadow-large
-									.project-image
-										img(src='images/project.jpg')
-									// End .project-image
-									.project-info
-										h3 Project Name Here
-										p
-											| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-										a(href='#') View Project
-									// End .project-info
-									// End .project
-									// End #projects
-									#skills
-										h2.heading Skills
-										ul
-											li JavaScript
-											li Python
-											li Ruby
-											li Go
-											li Node.js
-											li AngularJs
-											li React
-											li Elixir
-											li Java
-											li C
-											li C#
-											li C++
-											li Ruby on Rails
-											li JavaScript
-											li Python
-											li Ruby
-											li Go
-											li Node.js
-											li AngularJs
-											li React
-											li Elixir
-											li Java
-											li C
-											li C#
-											li C++
-											li Ruby on Rails
-									// End #skills
-									#contact
-										h2 Get in Touch
-										#contact-form
-											form(method='POST', action='https://formspree.io/email@email.com')
-												input(type='hidden', name='_subject', value='Contact request from personal website')
-												input(type='email', name='_replyto', placeholder='Your email', required='')
-												textarea(name='message', placeholder='Your message', required='')
-												button(type='submit') Send
-										// End #contact-form
-										// End #contact
-										footer
-											.container
-												.row
-													.col-sm-5.copyright
-														p Copyright © 2017 YOUR NAME
-													.col-sm-2.top
-														span#to-top
-															i.fa.fa-chevron-up(aria-hidden='true')
-													.col-sm-5.social
-														ul
-															li
-																a(href='https://github.com/', target='_blank')
-																	i.fa.fa-github(aria-hidden='true')
-															li
-																a(href='https://stackoverflow.com/', target='_blank')
-																	i.fa.fa-stack-overflow(aria-hidden='true')
-															li
-																a(href='https://linkedin.com/', target='_blank')
-																	i.fa.fa-linkedin(aria-hidden='true')
-															li
-																a(href='https://www.facebook.com/', target='_blank')
-																	i.fa.fa-facebook(aria-hidden='true')
-															li
-																a(href='https://twitter.com/', target='_blank')
-																	i.fa.fa-twitter(aria-hidden='true')
-															li
-																a(href='https://plus.google.com/', target='_blank')
-																	i.fa.fa-google-plus(aria-hidden='true')
-										// End footer
-										script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
-										script(src='js/scripts.min.js')
+				div(data-date='September 2015 – September 2016')
+					h3 Employer Name
+					h4 Job Title
+					p
+						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+				div(data-date='September 2015 – September 2016')
+					h3 Employer Name
+					h4 Job Title
+					p
+						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+		// End #experience
+		#education
+			h2.heading Education
+			.education-block
+				h3 University of Ottawa
+				span.education-date Sept 2016 - Sept 2017
+				h4 Bachelor of Science in Computer Science
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+			// End .education-block
+			.education-block
+				h3 University of Ottawa
+				span.education-date Sept 2016 - Sept 2017
+				h4 Bachelor of Science in Computer Science
+				ul
+					li
+						| Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					li
+						| Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					li
+						| Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			// End .education-block
+		// End #education
+		#projects.background-alt
+			h2.heading Projects
+			.container
+				.row
+					.project.shadow-large
+						.project-image
+							img(src='images/project.jpg')
+						// End .project-image
+						.project-info
+							h3 Project Name Here
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+							a(href='#') View Project
+						// End .project-info
+					// End .project
+					.project.shadow-large
+						.project-image
+							img(src='images/project.jpg')
+						// End .project-image
+						.project-info
+							h3 Project Name Here
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+							a(href='#') View Project
+						// End .project-info
+					// End .project
+		// End #projects
+		#skills
+			h2.heading Skills
+			ul
+				li JavaScript
+				li Python
+				li Ruby
+				li Go
+				li Node.js
+				li AngularJs
+				li React
+				li Elixir
+				li Java
+				li C
+				li C#
+				li C++
+				li Ruby on Rails
+				li JavaScript
+				li Python
+				li Ruby
+				li Go
+				li Node.js
+				li AngularJs
+				li React
+				li Elixir
+				li Java
+				li C
+				li C#
+				li C++
+				li Ruby on Rails
+		// End #skills
+		#contact
+			h2 Get in Touch
+			#contact-form
+				form(method='POST' action='https://formspree.io/email@email.com')
+					input(type='hidden' name='_subject' value='Contact request from personal website')
+					input(type='email' name='_replyto' placeholder='Your email' required='')
+					textarea(name='message' placeholder='Your message' required='')
+					button(type='submit') Send
+			// End #contact-form
+		// End #contact
+		footer
+			.container
+				.row
+					.col-sm-5.copyright
+						p
+							| Copyright © 2017 YOUR NAME
+					.col-sm-2.top
+						span#to-top
+							i.fa.fa-chevron-up(aria-hidden='true')
+					.col-sm-5.social
+						ul
+							li
+								a(href='https://github.com/' target='_blank')
+									i.fa.fa-github(aria-hidden='true')
+							li
+								a(href='https://stackoverflow.com/' target='_blank')
+									i.fa.fa-stack-overflow(aria-hidden='true')
+							li
+								a(href='https://linkedin.com/' target='_blank')
+									i.fa.fa-linkedin(aria-hidden='true')
+							li
+								a(href='https://www.facebook.com/' target='_blank')
+									i.fa.fa-facebook(aria-hidden='true')
+							li
+								a(href='https://twitter.com/' target='_blank')
+									i.fa.fa-twitter(aria-hidden='true')
+							li
+								a(href='https://plus.google.com/' target='_blank')
+									i.fa.fa-google-plus(aria-hidden='true')
+		// End footer
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+		script(src='js/scripts.min.js')
