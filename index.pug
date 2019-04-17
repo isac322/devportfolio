@@ -4,7 +4,7 @@ html.no-js(lang='en')
 		meta(charset='utf-8')
 		meta(http-equiv='X-UA-Compatible' content='IE=edge')
 		meta(name='viewport' content='width=device-width, initial-scale=1')
-		title My Portfolio
+		title Byeonghoon's Portfolio
 		link(rel='shortcut icon' href='favicon.ico' type='image/x-icon')
 		link(rel='icon' href='favicon.ico' type='image/x-icon')
 		link(href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet')
@@ -14,7 +14,6 @@ html.no-js(lang='en')
 	body
 		#mobile-menu-open.shadow-large
 			i.fa.fa-bars(aria-hidden='true')
-		// End #mobile-menu-toggle
 		header
 			#mobile-menu-close
 				span Close
@@ -32,19 +31,17 @@ html.no-js(lang='en')
 					a(href='#skills') Skills
 				li
 					a(href='#contact') Contact
-		// End header
+
 		#lead
 			#lead-content
-				h1 Ryan Fitzgerald
+				h1 Byeonghoon Yoo
 				h2 Software Engineer
-				a.btn-rounded-white(href='#') Download Resume
-			// End #lead-content
+				//a.btn-rounded-white(href='#') Download Resume
 			#lead-overlay
 			#lead-down
 				span
 					i.fa.fa-chevron-down(aria-hidden='true')
-			// End #lead-down
-		// End #lead
+
 		#about
 			.container
 				.row
@@ -52,147 +49,201 @@ html.no-js(lang='en')
 						h2.heading About Me
 					.col-md-8
 						p
-							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-							| eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-							| ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
-		// End #about
+
 		#experience.background-alt
 			h2.heading Experience
 			#experience-timeline
-				div(data-date='September 2015 – September 2016')
-					h3 Employer Name
-					h4 Job Title
+				div(data-date='February 2019 – Present')
+					h3 Covenger
+					h4 Part-time Front-end Developer
 					p
-						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-				div(data-date='September 2015 – September 2016')
-					h3 Employer Name
-					h4 Job Title
+						| Developing a small group matching service using&nbsp;
+						a(href='https://flutter.dev/') Flutter
+						| .
+				div(data-date='March 2017 – February 2019')
+					h3
+						a(href='http://dcslab.snu.ac.kr') Distributed Computing System Lab, Seoul National University
+					h4 Graduate Research Assistant
+					ul
+						li
+							| Developed a real-time&nbsp;
+							a(href='#benchmon') benchmark monitoring tool
+							| .
+						li
+							| Developed a&nbsp;
+							a(href='#hybridiso') scheduler&nbsp;
+							| that recognizes and balances the contention on shared resources in a data center that is a NUMA environment.
+						li
+							| Developed a&nbsp;
+							a(href='#dab') load generator&nbsp;
+							| that dynamically creates loads for realistic latency measurements on Web servers.
+						li Developed a tool that visualize Phase Changes of a benchmark with monitored data to evaluate policies of scheduler.
+				div(data-date='March 2017 – July 2017')
+					h3 Seoul National University
+					h4 Undergraduate Teaching Assistant
 					p
-						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-				div(data-date='September 2015 – September 2016')
-					h3 Employer Name
-					h4 Job Title
-					p
-						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-		// End #experience
+						a(href='http://dcslab.snu.ac.kr/courses/cp2017s/') Computer Programming (M1522.000600) course homepage
+					ul
+						li Taught C++, Java languages and the fundamentals and applications of Object-oriented programming.
+						li Made assignments and projects for learning the contents of the course.
+						// TODO: add cp2017s link
+						li Developed and operated Web services that automatically execute and score assignments.
+
 		#education
 			h2.heading Education
 			.education-block
-				h3 University of Ottawa
-				span.education-date Sept 2016 - Sept 2017
-				h4 Bachelor of Science in Computer Science
-				p
-					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-			// End .education-block
+				h3 Seoul National University
+				span.education-date Mar. 2017 - Feb. 2019
+				h4 Master of Science in Computer Science and Engineering
+				ul
+					li Researched distributed computing system, especially focus on data center load balancing.
+					li GPA: 4.18 / 4.3
 			.education-block
-				h3 University of Ottawa
-				span.education-date Sept 2016 - Sept 2017
+				h3 Korea Aerospace University
+				span.education-date Mar. 2013 - Aug. 2016
 				h4 Bachelor of Science in Computer Science
 				ul
-					li
-						| Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					li
-						| Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-					li
-						| Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-			// End .education-block
-		// End #education
+					li Cum laude
+					li Early graduation in 7 semesters
+					li GPA (Major only): 4.11(4.43) / 4.5
+
 		#projects.background-alt
 			h2.heading Projects
 			.container
 				.row
+					#benchmon.project.shadow-large
+						.project-image
+							img(src='images/benchmon.jpg')
+						.project-info
+							h3 benchmon
+							dl
+								dt Technical Sheet
+								dd Python, asyncio, RabbitMQ, Linux AIO, cgroup, resctrl (Intel CAT), perf
+								dt Role
+								dd Sole Owner, Main Developer
+							p
+								| Executes benchmarks and monitors them in real time for LLC hits and LLC usage with very little overhead.
+								br
+								| benchmon allows you to run various benchmarks and monitoring tools flexibly, as well as post processing of monitored data and control of execution environment.
+							a(href='https://github.com/isac322/benchmon') View Project
+
+					#hybridiso.project.shadow-large
+						.project-image
+							img(src='images/project.jpg')
+						.project-info
+							h3 hybridiso
+							p
+							a(href='https://github.com/dcslab-snu/hybrid_iso') View Project
+
+					.project.shadow-large
+						.project-image
+							img(src='images/bitcoupon.png')
+						.project-info
+							h3 비트쿠폰 (BitCoupon)
+							dl
+								dt Technical Sheet
+								dd Typescript, Node.js, Sequelize (ORM), PostgreSQL,
+								dt Role
+								dd Sole Server Developer
+							p
+							a(href='http://bitcoupon.co.kr/') Service Homepage
+
+				a#view-more-projects(href='#') View More Projects
+				#more-projects.row
 					.project.shadow-large
 						.project-image
 							img(src='images/project.jpg')
-						// End .project-image
 						.project-info
 							h3 Project Name Here
 							p
 								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
 							a(href='#') View Project
-						// End .project-info
-					// End .project
-					.project.shadow-large
+					#dab.project.shadow-large
 						.project-image
 							img(src='images/project.jpg')
-						// End .project-image
 						.project-info
-							h3 Project Name Here
+							h3 dab (dynamic #[a(href='https://httpd.apache.org/docs/2.4/en/programs/ab.html') ab])
 							p
-								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-							a(href='#') View Project
-						// End .project-info
-					// End .project
-		// End #projects
+							a(href='https://github.com/dcslab-snu/dynamic_ab') View Project
+
 		#skills
 			h2.heading Skills
 			ul
-				li JavaScript
-				li Python
-				li Ruby
-				li Go
-				li Node.js
-				li AngularJs
-				li React
-				li Elixir
-				li Java
 				li C
-				li C#
 				li C++
-				li Ruby on Rails
-				li JavaScript
-				li Python
-				li Ruby
-				li Go
-				li Node.js
-				li AngularJs
-				li React
-				li Elixir
 				li Java
-				li C
-				li C#
-				li C++
-				li Ruby on Rails
-		// End #skills
+				li Python
+				li JavaScript
+				li Typescript
+				li SQL
+				li HTML
+				li Pug
+				li CSS
+				li Less
+				li Bash
+				li Go
+				li Rust
+				li Dart
+				li OCaml
+				li Django
+				li Node.js
+				li D3.js
+				li Bootstrap
+				li JQuery
+				li Flutter
+				li OpenCL
+				li OpenGL
+				li Spark
+				li HDFS
+				li Arduino
+				li Linux
+				li AJAX
+				li ORM
+				li Docker
+				li Git
+				li Gradle
+				li Maven
+				li Algorithm
+				li Design Pattern
+
+		#publications.optional-section.background-alt
+			h2.heading Publication
+			.optional-section-block
+				p 유병훈, 남윤성, 엄현상. (2018). 데이터센터 워크로드를 위한 적응형 성능격리 스케줄러. 한국정보과학회 학술발표논문집, , 69-71.
+			.optional-section-block
+				p 남윤성, 신현일, 최석원, 유병훈, 엄현상. (2018). 고성능 IoT 데이터 스트림 처리를 위한 Nvidia Jetson TX2의 성능 평가. 한국정보과학회 학술발표논문집, , 1420-1422.
+			.optional-section-block
+				p 남윤성, 유병훈, 엄현상. (2017). 통합된 병렬 워크로드들의 최적화를 위한 프로파일러. 한국정보과학회 학술발표논문집, , 91-93.
+
 		#contact
 			h2 Get in Touch
 			#contact-form
-				form(method='POST' action='https://formspree.io/email@email.com')
+				form(method='POST' action='https://formspree.io/bh322yoo@gmail.com')
 					input(type='hidden' name='_subject' value='Contact request from personal website')
 					input(type='email' name='_replyto' placeholder='Your email' required='')
 					textarea(name='message' placeholder='Your message' required='')
 					button(type='submit') Send
-			// End #contact-form
-		// End #contact
+
 		footer
 			.container
 				.row
 					.col-sm-5.copyright
 						p
-							| Copyright © 2017 YOUR NAME
+							| Copyright © 2019 Byeonghoon Yoo
 					.col-sm-2.top
 						span#to-top
 							i.fa.fa-chevron-up(aria-hidden='true')
 					.col-sm-5.social
 						ul
 							li
-								a(href='https://github.com/' target='_blank')
+								a(href='https://github.com/isac322' target='_blank')
 									i.fa.fa-github(aria-hidden='true')
 							li
-								a(href='https://stackoverflow.com/' target='_blank')
-									i.fa.fa-stack-overflow(aria-hidden='true')
-							li
-								a(href='https://linkedin.com/' target='_blank')
+								a(href='https://www.linkedin.com/in/bh-yoo/' target='_blank')
 									i.fa.fa-linkedin(aria-hidden='true')
 							li
-								a(href='https://www.facebook.com/' target='_blank')
-									i.fa.fa-facebook(aria-hidden='true')
-							li
-								a(href='https://twitter.com/' target='_blank')
-									i.fa.fa-twitter(aria-hidden='true')
-							li
-								a(href='https://plus.google.com/' target='_blank')
-									i.fa.fa-google-plus(aria-hidden='true')
-		// End footer
-		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+								a(href='mailto:bhyoo@gmail.com' target='_blank')
+									i.fa.fa-envelope-o(aria-hidden='true')
+
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js', integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=', crossorigin='anonymous')
 		script(src='js/scripts.min.js')

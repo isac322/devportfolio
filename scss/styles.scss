@@ -528,7 +528,7 @@ footer {
         margin: 0 0 15px 0;
     }
 
-    p {
+    p, ul > li {
         color: $text;
         font-size: 0.9em;
         margin: 0;
@@ -652,6 +652,12 @@ footer {
 
 .project-image {
     float: left;
+
+    img {
+        max-width: 300px;
+        min-height: 300px;
+        object-fit: contain;
+    }
 }
 
 .project-info {
@@ -671,6 +677,18 @@ footer {
     p {
         color: $text;
         margin: 0 0 15px 0;
+        font-size: 0.9em;
+    }
+
+    dt {
+        color: $text;
+        margin: 0 0 4px 0;
+        font-size: 1em;
+    }
+
+    dd {
+        color: $text;
+        margin: 0 0 8px 0;
         font-size: 0.9em;
     }
 }
