@@ -27,7 +27,7 @@
 
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
-        }, Math.abs(window.pageYOffset - $(heading).offset().top) / 1);
+        }, Math.abs(window.pageYOffset - $(heading).offset().top) / 2);
 
         // Hide the menu once clicked if mobile
         if ($('header').hasClass('active')) {
@@ -53,8 +53,8 @@
     // Create timeline
     $('#experience-timeline').each(function() {
 
-        $this = $(this); // Store reference to this
-        $userContent = $this.children('div'); // user content
+        var $this = $(this); // Store reference to this
+        var $userContent = $this.children('div'); // user content
 
         // Create each timeline block
         $userContent.each(function() {
