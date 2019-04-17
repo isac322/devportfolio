@@ -86,8 +86,10 @@ html.no-js(lang='en')
 					ul
 						li Taught C++, Java languages and the fundamentals and applications of Object-oriented programming.
 						li Made assignments and projects for learning the contents of the course.
-						// TODO: add cp2017s link
-						li Developed and operated Web services that automatically execute and score assignments.
+						li
+							| Developed and operated an&nbsp;
+							a(href='#cp2017s') Web service&nbsp;
+							| that automatically execute and score assignments.
 
 		#education
 			h2.heading Education
@@ -118,21 +120,23 @@ html.no-js(lang='en')
 							h3 benchmon
 							dl
 								dt Technical Sheet
-								dd Python, asyncio, RabbitMQ, Linux AIO, cgroup, resctrl (Intel CAT), perf
+								dd Python, asyncio, RabbitMQ, Linux AIO, cgroup, resctrl (Intel CMT), Linux perf
 								dt Role
 								dd Sole Owner, Main Developer
-							p
-								| A framework for creating programs that can monitor real-time metrics such as LLC hit or LLC usage with very little overhead.
-								br
-								| benchmon allows you to run various benchmarks and monitoring tools flexibly, as well as post processing of monitored data and control of execution environment.
+							p A framework for creating programs that can monitor real-time metrics such as LLC hit or LLC usage with very little overhead.
 							a(href='https://github.com/isac322/benchmon') View Project
 
 					#hybridiso.project.shadow-large
 						.project-image
-							img(src='images/project.jpg')
+							img(src='images/hybridiso.jpg')
 						.project-info
 							h3 hybridiso
-							p
+							dl
+								dt Technical Sheet
+								dd Python, RabbitMQ, cgroup, resctrl (Intel CAT), Contention Estimation
+								dt Role
+								dd Main Developer, Architect
+							p A scheduler that ensures optimal performance and high resource utilization in the data center by recognizing the contention of workloads as they share resources and selectively applying performance isolation techniques to the characteristics of the workload.
 							a(href='https://github.com/dcslab-snu/hybrid_iso') View Project
 
 					.project.shadow-large
@@ -142,22 +146,27 @@ html.no-js(lang='en')
 							h3 비트쿠폰 (BitCoupon)
 							dl
 								dt Technical Sheet
-								dd Typescript, Node.js, Sequelize (ORM), PostgreSQL,
+								dd Typescript, Javascript, PostgreSQL, Node.js, Sequelize (ORM), Firebase
 								dt Role
 								dd Sole Server Developer
-							p
+							p A mobile app service that enhances security by storing all payments using points, coupons, or stamps at a merchant in a block chain.
 							a(href='http://bitcoupon.co.kr/') Service Homepage
+
+					#cp2017s.project.shadow-large
+						// TODO: add project thumbnail if can
+						.no-image
+							.project-info
+								h3 Online Judge
+								dl
+									dt Technical Sheet
+									dd Typescript, Javascript, Pug, Less, MariaDB, Node.js, Sequelize (ORM), Bootstrap, Docker, RestAPI
+									dt Role
+									dd Sole Developer, Sole Service Operator
+								p A web service that judges C ++, Java, and Make code submitted by students in real time.
+								a(href='https://github.com/isac322/cp2017s') View Project
 
 				a#view-more-projects(href='#') View More Projects
 				#more-projects.row
-					.project.shadow-large
-						.project-image
-							img(src='images/project.jpg')
-						.project-info
-							h3 Project Name Here
-							p
-								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-							a(href='#') View Project
 					#dab.project.shadow-large
 						.project-image
 							img(src='images/project.jpg')
@@ -205,6 +214,7 @@ html.no-js(lang='en')
 				li Maven
 				li Algorithm
 				li Design Pattern
+				li Asynchronous Programming
 
 		#publications.optional-section.background-alt
 			h2.heading Publication
